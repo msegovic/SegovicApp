@@ -63,7 +63,9 @@ public class WebChecker {
                 newURL = insertURL.getText();
                 HTTPClient httpClient = new HTTPClient();
                 try {
-                    httpClient.validateUrl();  // Kako poslati string iz textualnog polja
+                    httpClient.validateUrl();  // Kako poslati string iz textualnog polja u drugu klasu na obradu ?
+                                                // Ideja je uzeti string iz polja koje se unese, prilikom pritiska gumba ga spremit u varijablu
+                                                // i poslat ga u klasu HTTPClient na obradu gdje se validira cijeli URL. Baca mi masu grešaka, tipa nUllPointerException
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
