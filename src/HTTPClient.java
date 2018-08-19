@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HTTPClient {
-    private boolean verifyUrl(String url) {
+    public boolean verifyUrl(String url) {
 
         // Regex for checking if the URL is valid
         String urlRegex = "^(http|https)://[-a-zA-Z0-9+&@#/%?=~_|,!:.;]*[-a-zA-Z0-9+@#/%=&_|]";
@@ -23,7 +23,7 @@ public class HTTPClient {
 
     public String failedURLS ="";
     public String succeededURLS ="";
-    public String incorrectURLS = "";
+    public int incorrectURLS = 0;
     public String succeededStatus;
     public String failedStatus;
 
@@ -37,12 +37,8 @@ public class HTTPClient {
 
                 if (myConnection.getResponseCode()==URLStatus.HTTP_OK.getStatusCode()) {
                     succeededStatus = URLStatus.getStatusMessageForStatusCode(myConnection.getResponseCode());
-                    succeededURLS = succeededURLS + "\n" + url + "****** Status message is : "
-                                + succeededStatus;
                 } else {
                     failedStatus = URLStatus.getStatusMessageForStatusCode(myConnection.getResponseCode());
-                    failedURLS = failedURLS + "\n" + url + "****** Status message is : "
-                                + failedStatus;
                 }
 
             } catch (Exception e) {
@@ -50,7 +46,7 @@ public class HTTPClient {
             }
 
         }else {
-                incorrectURLS += "\n" + url;
+                incorrectURLS += 1;
         }
     }
 

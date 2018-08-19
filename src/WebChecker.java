@@ -5,7 +5,7 @@ import java.awt.event.*;
 public class WebChecker {
 
     private JFrame frame;
-    private Label statusLabel;
+    public Label statusLabel;
     public JTextField insertURL;
     public String newURL;
 
@@ -60,20 +60,30 @@ public class WebChecker {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             if( command.equals( "OK" ))  {
+
+                // Store data from text field into new variable and send it to HTTPClient for validation
                 newURL = insertURL.getText();
                 HTTPClient httpClient = new HTTPClient();
                 try {
-                    httpClient.validateUrl(newURL);  // Kako poslati string iz textualnog polja u drugu klasu na obradu ?
-                                                // Ideja je uzeti string iz polja koje se unese, prilikom pritiska gumba ga spremit u varijablu
-                                                // i poslat ga u klasu HTTPClient na obradu gdje se validira cijeli URL. Baca mi masu grešaka, tipa nUllPointerException
+                    httpClient.validateUrl(newURL);
+
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
 
+                // TODO: print incorrect url status message
+                if (httpClient.incorrectURLS != 0) {
+                    statusLabel.setText("Incorrect URL, please try again!");
+                }
                 // Prints out status code of an URL
-                statusLabel.setText(httpClient.succeededStatus);
+                if(httpClient.succeededStatus == "OK"){
+                    statusLabel.setText(httpClient.succeededStatus);
+                }
+                else{
+                    statusLabel.setText(httpClient.failedStatus);
+                }
             }
-
         }
+
     }
 }
