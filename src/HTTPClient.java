@@ -26,13 +26,10 @@ public class HTTPClient {
     public String incorrectURLS = "";
     public String succeededStatus;
     public String failedStatus;
-    public String url;
 
 
 
-    public void validateUrl() throws Exception {
-        WebChecker webChecker = new WebChecker();
-        url = webChecker.newURL;
+    public void validateUrl(String url) throws Exception {
         if (verifyUrl(url)){
             try{
                 URL myURL = new URL(url);
