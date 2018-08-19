@@ -5,8 +5,8 @@ import java.awt.event.*;
 public class WebChecker {
 
     private JFrame frame;
-    public Label statusLabel;
-    public Label validLabel;
+    private Label statusLabel;
+    private Label validLabel;
     public JTextField insertURL;
     public String newURL;
 
@@ -67,7 +67,7 @@ public class WebChecker {
     public class ButtonClickListener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
-            if( command.equals( "OK" ))  {
+            if (command.equals("OK")) {
 
                 // Store data from text field into new variable and send it to HTTPClient for validation
                 newURL = insertURL.getText();
@@ -79,21 +79,20 @@ public class WebChecker {
                     e1.printStackTrace();
                 }
 
-                // TODO: print incorrect url status message
+                // Checking for incorrect URL and printing out status codes
                 if (httpClient.incorrectURLS != 0) {
                     statusLabel.setText("Incorrect URL, please try again!");
-                }
-                // Prints out status code of an URL
-                if(httpClient.succeededStatus == "OK"){
-                    validLabel.setText("URL valid !");
-                    statusLabel.setText("Status code: " + httpClient.succeededStatus);
-                }
-                else{
-                    validLabel.setText("URL valid !");
-                    statusLabel.setText("Status code: " + httpClient.failedStatus);
+                } else {
+                    // Prints out status code of an URL
+                    if (httpClient.succeededStatus == "OK") {
+                        validLabel.setText("URL valid !");
+                        statusLabel.setText("Status code: " + httpClient.succeededStatus);
+                    } else {
+                        validLabel.setText("URL valid !");
+                        statusLabel.setText("Status code: " + httpClient.failedStatus);
+                    }
                 }
             }
         }
-
     }
 }
