@@ -48,6 +48,7 @@ public class HTTPClient {
         }
     }
 
+}
     /*public void main(String[] args) {
 
         try {
@@ -62,7 +63,6 @@ public class HTTPClient {
         } catch (Exception e) {
             System.out.print(e.getMessage()); }
     }*/
-}
 
 
 // Possible implementation of more URLs to check, not just one, probably better
