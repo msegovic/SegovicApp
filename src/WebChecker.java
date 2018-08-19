@@ -6,6 +6,7 @@ public class WebChecker {
 
     private JFrame frame;
     public Label statusLabel;
+    public Label validLabel;
     public JTextField insertURL;
     public String newURL;
 
@@ -44,9 +45,16 @@ public class WebChecker {
 
 
         // Label for showing status code of succeededStatus (OK, Not found etc)
+
+        validLabel = new Label();
+        validLabel.setBounds(50,100,1000,20);
+        frame.getContentPane().add(validLabel);
+
         statusLabel = new Label();
-        statusLabel.setBounds(50,100,1000,50);
+        statusLabel.setBounds(50,130,1000,20);
         frame.getContentPane().add(statusLabel);
+
+
 
         //Add new button for checking URL via HTTPClient class
         Button btnChange = new Button("Check URL");
@@ -77,10 +85,12 @@ public class WebChecker {
                 }
                 // Prints out status code of an URL
                 if(httpClient.succeededStatus == "OK"){
-                    statusLabel.setText(httpClient.succeededStatus);
+                    validLabel.setText("URL valid !");
+                    statusLabel.setText("Status code: " + httpClient.succeededStatus);
                 }
                 else{
-                    statusLabel.setText(httpClient.failedStatus);
+                    validLabel.setText("URL valid !");
+                    statusLabel.setText("Status code: " + httpClient.failedStatus);
                 }
             }
         }

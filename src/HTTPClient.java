@@ -21,8 +21,6 @@ public class HTTPClient {
         }
     }
 
-    public String failedURLS ="";
-    public String succeededURLS ="";
     public int incorrectURLS = 0;
     public String succeededStatus;
     public String failedStatus;
