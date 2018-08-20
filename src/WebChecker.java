@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.List;
+import java.util.Map;
 
 public class WebChecker {
 
@@ -11,6 +13,7 @@ public class WebChecker {
     public String newURL;
     private JTextArea textArea;
     private final static String newline = "\n";
+    private JScrollPane scroll;
 
     public WebChecker(){
         prepareGUI();
@@ -33,7 +36,7 @@ public class WebChecker {
 
         // Main frame for application
         frame = new JFrame("WebChecker");
-        frame.setBounds(500, 500, 600, 400);
+        frame.setBounds(50, 50, 1280, 720);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
@@ -58,8 +61,12 @@ public class WebChecker {
 
         // Text area for printing out response headers
         textArea = new JTextArea(5, 20);
-        JScrollPane scrollPane = new JScrollPane(textArea);
+        scroll = new JScrollPane(textArea);
+        textArea.setBounds(50, 160, 150, 150);
         textArea.setEditable(false);
+        //textArea.setCaretPosition(textArea.getDocument().getLength());
+        frame.getContentPane().add(textArea);
+        frame.getContentPane().add(scroll);
 
 
         //Add new button for checking URL via HTTPClient class
@@ -93,6 +100,8 @@ public class WebChecker {
                     if (httpClient.succeededStatus == "OK") {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.succeededStatus);
+                        for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                        textArea.append(output);
                     } else {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.failedStatus);
