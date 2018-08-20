@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03944556-298b-4e54-9071-6b0000b92615" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/HeadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NewHeadRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTTPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SegovicApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SegovicApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/HttpURLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/JavaGetRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/JavaGetRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HttpURLConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaGetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaGetRequest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,36 +22,37 @@
     <session id="-529546224">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="17" />
           <entry key="txt" value="1" />
           <entry key="vmoptions" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="17" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2632" />
+          <entry key="java" value="3044" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2632" />
+          <entry key="JAVA" value="3044" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -59,11 +63,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="38" column="110" selection-start-line="38" selection-start-column="110" selection-end-line="38" selection-end-column="110" />
+            <state relative-caret-position="34">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HeadRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="107" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="107" />
+              <folding>
+                <element signature="e#0#2088#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JavaGetRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NewHeadRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -80,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="284">
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="45" />
               <folding>
                 <element signature="e#475#476#0" expanded="true" />
                 <element signature="e#508#509#0" expanded="true" />
@@ -99,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="77" column="50" lean-forward="true" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+            <state relative-caret-position="391">
+              <caret line="73" column="26" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,8 +182,12 @@
         <option value="$PROJECT_DIR$/src/AWTControlDemo.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
         <option value="$PROJECT_DIR$/src/WebChecker.java" />
+        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
+        <option value="$PROJECT_DIR$/src/HttpURLConnection.java" />
+        <option value="$PROJECT_DIR$/src/HeadRequest.java" />
+        <option value="$PROJECT_DIR$/src/NewHeadRequest.java" />
+        <option value="$PROJECT_DIR$/src/JavaGetRequest.java" />
       </list>
     </option>
   </component>
@@ -167,7 +205,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,20 +217,26 @@
               <item name="SegovicApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SegovicApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696459759" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534753852512" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/apache-httpcomponents-httpcore.jar!/" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -207,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebChecker">
+  <component name="RunManager" selected="Application.JavaGetRequest">
     <configuration name="AWTControlDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AWTControlDemo" />
       <module name="SegovicApp" />
@@ -215,15 +258,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HTTPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HTTPClient" />
+    <configuration name="HeadRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bethecoder.tutorials.commons_httpclient.HeadRequest" />
+      <module name="SegovicApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bethecoder.tutorials.commons_httpclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpURLConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HttpURLConnection" />
       <module name="SegovicApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="JavaGetRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaGetRequest" />
       <module name="SegovicApp" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,27 +292,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="SegovicApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.HTTPClient" />
       <item itemvalue="Application.AWTControlDemo" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.WebChecker" />
+      <item itemvalue="Application.HttpURLConnection" />
+      <item itemvalue="Application.JavaGetRequest" />
+      <item itemvalue="Application.HeadRequest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaGetRequest" />
+        <item itemvalue="Application.HeadRequest" />
+        <item itemvalue="Application.HttpURLConnection" />
         <item itemvalue="Application.WebChecker" />
         <item itemvalue="Application.AWTControlDemo" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.HTTPClient" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +326,7 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -286,7 +335,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32821497" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32821497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,31 +405,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/url-list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="38" column="110" selection-start-line="38" selection-start-column="110" selection-end-line="38" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,10 +422,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpURLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="77" column="50" lean-forward="true" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        <state relative-caret-position="391">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="107" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="107" />
+          <folding>
+            <element signature="e#0#2088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewHeadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaGetRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -430,6 +516,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>apache-httpcomponents-httpcore</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
