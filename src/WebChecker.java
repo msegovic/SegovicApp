@@ -9,6 +9,8 @@ public class WebChecker {
     private Label validLabel;
     public JTextField insertURL;
     public String newURL;
+    private JTextArea textArea;
+    private final static String newline = "\n";
 
     public WebChecker(){
         prepareGUI();
@@ -45,7 +47,6 @@ public class WebChecker {
 
 
         // Label for showing status code of succeededStatus (OK, Not found etc)
-
         validLabel = new Label();
         validLabel.setBounds(50,100,1000,20);
         frame.getContentPane().add(validLabel);
@@ -54,6 +55,11 @@ public class WebChecker {
         statusLabel.setBounds(50,130,1000,20);
         frame.getContentPane().add(statusLabel);
 
+
+        // Text area for printing out response headers
+        textArea = new JTextArea(5, 20);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        textArea.setEditable(false);
 
 
         //Add new button for checking URL via HTTPClient class

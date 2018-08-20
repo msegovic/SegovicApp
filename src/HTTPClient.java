@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,6 +39,15 @@ public class HTTPClient {
                 } else {
                     failedStatus = URLStatus.getStatusMessageForStatusCode(myConnection.getResponseCode());
                 }
+
+                // Store headers from the request into map
+                Map<String, List<String>> map = myConnection.getHeaderFields();
+
+                System.out.println("Printing All Response Header for URL: " + myURL.toString() + "\n");
+                for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                    System.out.println(entry.getKey() + " : " + entry.getValue());
+                }
+
 
             } catch (Exception e) {
                 System.out.print("For url- " + url+ "" +e.getMessage());
