@@ -100,8 +100,8 @@ public class WebChecker {
                     if (httpClient.succeededStatus == "OK") {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.succeededStatus);
-                        for (Map.Entry<String, List<String>> entry : map.entrySet()) {
-                        textArea.append(output);}
+                        /*for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                        textArea.append(output);}*/
                     } else {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.failedStatus);
