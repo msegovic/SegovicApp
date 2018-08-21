@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 public class WebChecker {
 
@@ -62,8 +62,9 @@ public class WebChecker {
         // Text area for printing out response headers
         textArea = new JTextArea(5, 20);
         scroll = new JScrollPane(textArea);
-        textArea.setBounds(50, 160, 150, 150);
+        textArea.setBounds(50, 160, 800, 300);
         textArea.setEditable(false);
+        textArea.setLineWrap(true);
         //textArea.setCaretPosition(textArea.getDocument().getLength());
         frame.getContentPane().add(textArea);
         frame.getContentPane().add(scroll);
@@ -85,8 +86,9 @@ public class WebChecker {
                 // Store data from text field into new variable and send it to HTTPClient for validation
                 newURL = insertURL.getText();
                 HTTPClient httpClient = new HTTPClient();
+                Map<String, List<String>> map = new HashMap<>();
                 try {
-                    httpClient.validateUrl(newURL);
+                    map = httpClient.validateUrl(newURL);
 
                 } catch (Exception e1) {
                     e1.printStackTrace();
@@ -100,7 +102,11 @@ public class WebChecker {
                     if (httpClient.succeededStatus == "OK") {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.succeededStatus);
-                        /*for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                        for (Map.Entry<String, List<String>> entry : map.entrySet())
+                        {
+                            textArea.append(entry.getKey() + ": " + entry.getValue() + "\n");
+                        }
+                        /*
                         textArea.append(output);}*/
                     } else {
                         validLabel.setText("URL valid !");

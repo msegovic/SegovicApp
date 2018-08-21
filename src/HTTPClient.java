@@ -1,9 +1,5 @@
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -29,7 +25,7 @@ public class HTTPClient {
 
 
 
-    public void validateUrl(String url) throws Exception {
+    public Map<String, List<String>> validateUrl(String url) throws Exception {
         if (verifyUrl(url)){
             try{
                 URL myURL = new URL(url);
@@ -41,15 +37,15 @@ public class HTTPClient {
                     failedStatus = URLStatus.getStatusMessageForStatusCode(myConnection.getResponseCode());
                 }
 
-                // Store headers from the request into map
+                // Store headers from the request into a map
 
                 Map<String, List<String>> map = myConnection.getHeaderFields();
 
-                System.out.println("Printing All Response Header for URL: " + myURL.toString() + "\n");
+                /*System.out.println("Printing All Response Header for URL: " + myURL.toString() + "\n");
                 for (Map.Entry<String, List<String>> entry : map.entrySet()) {
                     System.out.println(entry.getKey() + " : " + entry.getValue());
-                }
-
+                }*/
+                return map;
 
             } catch (Exception e) {
                 System.out.print("For url- " + url+ "" +e.getMessage());
@@ -58,6 +54,7 @@ public class HTTPClient {
         }else {
             incorrectURLS += 1;
         }
+        return null;
     }
 
 }
