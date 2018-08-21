@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03944556-298b-4e54-9071-6b0000b92615" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$ButtonClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTTPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTPClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,12 +17,12 @@
     <session id="-529546224">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3653" />
+          <entry key="java" value="3884" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3653" />
+          <entry key="JAVA" value="3884" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -61,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="46" column="64" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="64" />
+            <state relative-caret-position="680">
+              <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HeadRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
+            <state relative-caret-position="535">
               <caret line="40" column="54" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="442">
               <caret line="28" column="45" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="45" />
               <folding>
                 <element signature="e#475#476#0" expanded="true" />
@@ -107,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="544">
               <caret line="51" column="26" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="26" />
             </state>
           </provider>
@@ -116,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+            <state relative-caret-position="1130">
+              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TextDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="42">
               <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -181,9 +178,9 @@
         <option value="$PROJECT_DIR$/src/NewHeadRequest.java" />
         <option value="$PROJECT_DIR$/src/JavaGetRequest.java" />
         <option value="$PROJECT_DIR$/src/HeadRequest.java" />
-        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
         <option value="$PROJECT_DIR$/src/TextDemo.java" />
         <option value="$PROJECT_DIR$/src/components/WebChecker.java" />
+        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
         <option value="$PROJECT_DIR$/src/WebChecker.java" />
       </list>
     </option>
@@ -200,8 +197,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,12 +220,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534758790906" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534759191609" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/apache-httpcomponents-httpclient.jar!/" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -327,9 +324,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,7 +334,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32821497" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32821497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,13 +379,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/02_ListDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/ListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListDemo.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -415,33 +405,9 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewHeadRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaGetRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpURLConnection.java" />
+    <entry file="file://$PROJECT_DIR$/src/NewHeadRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/JavaGetRequest.java" />
     <entry file="file://$PROJECT_DIR$/src/url-list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -449,16 +415,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="544">
           <caret line="51" column="26" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TextDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="42">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -470,7 +447,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HeadRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="535">
           <caret line="40" column="54" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -478,21 +455,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="45" />
-          <folding>
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="64" />
+        <state relative-caret-position="680">
+          <caret line="49" column="79" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -501,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        <state relative-caret-position="1130">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
