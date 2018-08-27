@@ -40,11 +40,6 @@ public class HTTPClient {
                 // Store headers from the request into a map
 
                 Map<String, List<String>> map = myConnection.getHeaderFields();
-
-                /*System.out.println("Printing All Response Header for URL: " + myURL.toString() + "\n");
-                for (Map.Entry<String, List<String>> entry : map.entrySet()) {
-                    System.out.println(entry.getKey() + " : " + entry.getValue());
-                }*/
                 return map;
 
             } catch (Exception e) {

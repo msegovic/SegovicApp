@@ -4,16 +4,18 @@ import java.awt.event.*;
 import java.util.*;
 import java.util.List;
 
-public class WebChecker {
+public class WebChecker implements ActionListener {
 
     private JFrame frame;
     private Label statusLabel;
     private Label validLabel;
     public JTextField insertURL;
     public String newURL;
-    private JTextArea textArea;
-    private final static String newline = "\n";
+    public JTextArea textArea;
     private JScrollPane scroll;
+    public JMenuBar menuBar;
+    public JMenu menu;
+    public JMenuItem sshItem;
 
     public WebChecker(){
         prepareGUI();
@@ -41,6 +43,23 @@ public class WebChecker {
         frame.getContentPane().setLayout(null);
 
 
+        //Create the menu bar.
+        menuBar = new JMenuBar();
+
+        //Build the first menu.
+        menu = new JMenu("Connect");
+        menu.setMnemonic(KeyEvent.VK_A);
+        menuBar.add(menu);
+
+        //SSH menu item
+        sshItem = new JMenuItem("SSH Connection");
+        sshItem.addActionListener(this);
+        menu.add(sshItem);
+
+        menuBar.add(menu);
+        frame.setJMenuBar(menuBar);
+
+
         // Text field for entering URL
         insertURL = new JTextField();
         insertURL.setText("Enter URL");
@@ -58,17 +77,11 @@ public class WebChecker {
         statusLabel.setBounds(50,130,1000,20);
         frame.getContentPane().add(statusLabel);
 
-
-        // Text area for printing out response headers
         textArea = new JTextArea(5, 20);
-        scroll = new JScrollPane(textArea);
         textArea.setBounds(50, 160, 800, 300);
+        frame.getContentPane().add(textArea);
         textArea.setEditable(false);
         textArea.setLineWrap(true);
-        //textArea.setCaretPosition(textArea.getDocument().getLength());
-        frame.getContentPane().add(textArea);
-        frame.getContentPane().add(scroll);
-
 
         //Add new button for checking URL via HTTPClient class
         Button btnChange = new Button("Check URL");
@@ -76,6 +89,18 @@ public class WebChecker {
         btnChange.setActionCommand("OK");
         btnChange.addActionListener(new ButtonClickListener());
         frame.getContentPane().add(btnChange);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == sshItem){
+            JFrame newFrame = new JFrame();
+            newFrame.setVisible(true);
+            newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            newFrame.setBounds(50, 50, 640, 480);
+            newFrame.setTitle("SSH Connection");
+        }
     }
 
     public class ButtonClickListener implements ActionListener{
@@ -94,6 +119,10 @@ public class WebChecker {
                     e1.printStackTrace();
                 }
 
+                // Text area for printing out response headers
+
+
+
                 // Checking for incorrect URL and printing out status codes
                 if (httpClient.incorrectURLS != 0) {
                     statusLabel.setText("Incorrect URL, please try again!");
@@ -106,8 +135,6 @@ public class WebChecker {
                         {
                             textArea.append(entry.getKey() + ": " + entry.getValue() + "\n");
                         }
-                        /*
-                        textArea.append(output);}*/
                     } else {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.failedStatus);
