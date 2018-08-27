@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03944556-298b-4e54-9071-6b0000b92615" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MenuDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SSH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/HTTPClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/Test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/Test$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/Test$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/Test$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$ButtonClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker$ButtonClickListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SegovicApp/WebChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/components/TextDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SegovicApp/components/TextDemo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HTTPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextDemo.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,40 +31,40 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="27" />
+          <entry key="java" value="28" />
           <entry key="txt" value="1" />
           <entry key="vmoptions" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="27" />
+          <entry key="JAVA" value="28" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4900" />
+          <entry key="java" value="4992" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4900" />
+          <entry key="JAVA" value="4992" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7887789">
+    <splitter split-orientation="horizontal" split-proportion="0.6039551">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+                <state relative-caret-position="476">
+                  <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -95,18 +85,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/MenuDemo2.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -115,6 +93,18 @@
                   <folding>
                     <element signature="e#820#961#0" expanded="true" />
                     <element signature="e#960#961#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="529">
+                  <caret line="142" column="25" lean-forward="true" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,7 +142,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MenuDemo.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
+                <state relative-caret-position="567">
                   <caret line="171" column="24" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#8732#0" expanded="true" />
@@ -209,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/HeadRequest.java" />
         <option value="$PROJECT_DIR$/src/TextDemo.java" />
         <option value="$PROJECT_DIR$/src/components/WebChecker.java" />
-        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
         <option value="$PROJECT_DIR$/src/MenuDemo.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/MenuDemo2.java" />
         <option value="$PROJECT_DIR$/src/SSH.java" />
+        <option value="$PROJECT_DIR$/src/HTTPClient.java" />
         <option value="$PROJECT_DIR$/src/WebChecker.java" />
       </list>
     </option>
@@ -272,7 +262,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535359336683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535360005811" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/jsch-0.1.54.jar!/" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -368,7 +358,7 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0026652452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10714286" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -478,6 +468,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SSH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="171" column="24" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#8732#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/URLStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -491,18 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HTTPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SSH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        <state relative-caret-position="476">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -520,21 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MenuDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="171" column="24" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#8732#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+        <state relative-caret-position="529">
+          <caret line="142" column="25" lean-forward="true" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

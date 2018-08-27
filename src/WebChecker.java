@@ -77,11 +77,12 @@ public class WebChecker implements ActionListener {
         statusLabel.setBounds(50,130,1000,20);
         frame.getContentPane().add(statusLabel);
 
+        // Text area for response headers
         textArea = new JTextArea(5, 20);
         textArea.setBounds(50, 160, 800, 300);
-        frame.getContentPane().add(textArea);
         textArea.setEditable(false);
         textArea.setLineWrap(true);
+        frame.getContentPane().add(textArea);
 
         //Add new button for checking URL via HTTPClient class
         Button btnChange = new Button("Check URL");
@@ -138,6 +139,10 @@ public class WebChecker implements ActionListener {
                     } else {
                         validLabel.setText("URL valid !");
                         statusLabel.setText("Status code: " + httpClient.failedStatus);
+                        for (Map.Entry<String, List<String>> entry : map.entrySet())
+                        {
+                            textArea.append(entry.getKey() + ": " + entry.getValue() + "\n");
+                        }
                     }
                 }
             }
