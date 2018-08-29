@@ -12,7 +12,6 @@ public class WebChecker implements ActionListener {
     public JTextField insertURL;
     public String newURL;
     public JTextArea textArea;
-    private JScrollPane scroll;
     public JMenuBar menuBar;
     public JMenu menu;
     public JMenuItem sshItem;
@@ -120,9 +119,8 @@ public class WebChecker implements ActionListener {
                     e1.printStackTrace();
                 }
 
-                // Text area for printing out response headers
-
-
+                // Deleting old text
+                textArea.setText(null);
 
                 // Checking for incorrect URL and printing out status codes
                 if (httpClient.incorrectURLS != 0) {
