@@ -5,10 +5,10 @@ import com.jcraft.jsch.*;
 
 public class SSH {
     public static void main(String[] args) {
-
+        WebChecker webChecker = new WebChecker();
         String host = "192.168.5.50";
-        String user = "msegovic";
-        String password = "goodlife33";
+        String user = webChecker.susername;
+        String password = webChecker.spassword;
         String command = "systemctl status nginx";
         try {
             Properties config = new Properties();

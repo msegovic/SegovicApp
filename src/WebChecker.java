@@ -7,14 +7,14 @@ import java.util.List;
 public class WebChecker implements ActionListener {
 
     private JFrame frame;
-    private Label statusLabel;
-    private Label validLabel;
-    public JTextField insertURL;
-    public String newURL;
+    private Label statusLabel, validLabel, userLabel, passLabel;
+    public JTextField insertURL, username, password;
+    public String newURL, susername, spassword;
     public JTextArea textArea;
     public JMenuBar menuBar;
     public JMenu menu;
     public JMenuItem sshItem;
+    public Button btnConnect;
 
     public WebChecker(){
         prepareGUI();
@@ -37,7 +37,7 @@ public class WebChecker implements ActionListener {
 
         // Main frame for application
         frame = new JFrame("WebChecker");
-        frame.setBounds(50, 50, 1280, 720);
+        frame.setBounds(50, 50, 930, 700);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
@@ -66,7 +66,6 @@ public class WebChecker implements ActionListener {
         frame.getContentPane().add(insertURL);
         insertURL.setColumns(1);
 
-
         // Label for showing status code of succeededStatus (OK, Not found etc)
         validLabel = new Label();
         validLabel.setBounds(50,100,1000,20);
@@ -90,6 +89,29 @@ public class WebChecker implements ActionListener {
         btnChange.addActionListener(new ButtonClickListener());
         frame.getContentPane().add(btnChange);
 
+        // SSH Connection fields
+        userLabel = new Label();
+        userLabel.setText("Username");
+        userLabel.setBounds(130,40,500,20);
+
+        username = new JTextField();
+        username.setBounds(130, 65, 200, 30);
+        username.setColumns(1);
+
+        passLabel = new Label();
+        passLabel.setText("Password");
+        passLabel.setBounds(130,110,500,20);
+
+        password = new JTextField();
+        password.setBounds(130, 135, 200, 30);
+        password.setColumns(1);
+
+        // Connect button
+        btnConnect = new Button("Connect");
+        btnConnect.setBounds(175, 180, 115, 30);
+        btnConnect.setActionCommand("OK");
+        btnConnect.addActionListener(this);
+
     }
 
     @Override
@@ -98,8 +120,26 @@ public class WebChecker implements ActionListener {
             JFrame newFrame = new JFrame();
             newFrame.setVisible(true);
             newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            newFrame.setBounds(50, 50, 640, 480);
+            newFrame.setBounds(50, 50, 480, 320);
             newFrame.setTitle("SSH Connection");
+            newFrame.getContentPane().setLayout(null);
+
+            // Add text fields and labels to a newframe
+            newFrame.getContentPane().add(username);
+            newFrame.getContentPane().add(password);
+            newFrame.getContentPane().add(userLabel);
+            newFrame.getContentPane().add(passLabel);
+            newFrame.getContentPane().add(btnConnect);
+
+            // Store username and password in strings
+            susername = username.getText();
+            spassword = password.getText();
+
+            String command = e.getActionCommand();
+            if (command.equals("OK")) {
+                
+            }
+
         }
     }
 
