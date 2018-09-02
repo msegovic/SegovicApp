@@ -4,11 +4,11 @@ import java.util.Properties;
 import com.jcraft.jsch.*;
 
 public class SSH {
+    public String host;
+    public boolean successfulConn;
     public void ConnectandExecute(String User, char[] Pass) {
         // WebChecker webChecker = new WebChecker();
-        String host = "192.168.5.50";
-        //String user = "msegovic";
-        //String password = ;
+        host = "192.168.5.50";
         String command = "systemctl status nginx";
         try {
             Properties config = new Properties();
@@ -20,7 +20,7 @@ public class SSH {
             session.setConfig(config);
             // Establish the connection
             session.connect();
-            System.out.println("Connected...");
+            successfulConn = session.isConnected();
 
             ChannelExec channel = (ChannelExec) session.openChannel("exec");
             channel.setCommand(command);
@@ -46,7 +46,6 @@ public class SSH {
             }
             channel.disconnect();
             session.disconnect();
-            System.out.println("DONE!!!");
         } catch (Exception e) {
             e.printStackTrace();
         }
