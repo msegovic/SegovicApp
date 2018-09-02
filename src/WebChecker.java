@@ -13,7 +13,7 @@ public class WebChecker implements ActionListener {
     public JTextArea textArea;
     public JMenuBar menuBar;
     public JMenu menu;
-    public JMenuItem sshItem;
+    private JMenuItem sshItem;
     public Button btnConnect;
     private JPasswordField passwordField;
     public char[] spassword;

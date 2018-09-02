@@ -8,7 +8,7 @@ public class SSH {
         // WebChecker webChecker = new WebChecker();
         String host = "192.168.5.50";
         //String user = "msegovic";
-        //String password = "goodlife33";
+        //String password = ;
         String command = "systemctl status nginx";
         try {
             Properties config = new Properties();
@@ -16,7 +16,7 @@ public class SSH {
             JSch jsch = new JSch();
             // Create a JSch session to connect to the server
             Session session = jsch.getSession(User, host, 22);
-            //session.setPassword(Pass);
+            session.setPassword(String.valueOf(Pass));
             session.setConfig(config);
             // Establish the connection
             session.connect();
