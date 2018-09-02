@@ -110,10 +110,11 @@ public class WebChecker implements ActionListener {
         btnConnect = new Button("Connect");
         btnConnect.setBounds(175, 180, 115, 30);
         btnConnect.setActionCommand("OK");
-        btnConnect.addActionListener(this);
+        btnConnect.addActionListener(new SSHButtonListener());
 
     }
 
+    // New frame for SSH connection
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == sshItem){
@@ -135,11 +136,17 @@ public class WebChecker implements ActionListener {
             susername = username.getText();
             spassword = password.getText();
 
+        }
+    }
+
+    // Button for SSH Connection
+    public class SSHButtonListener implements ActionListener{
+        public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
             if (command.equals("OK")) {
-                
-            }
 
+
+            }
         }
     }
 

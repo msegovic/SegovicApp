@@ -4,7 +4,7 @@ import java.util.Properties;
 import com.jcraft.jsch.*;
 
 public class SSH {
-    public static void main(String[] args) {
+    public void  {
         WebChecker webChecker = new WebChecker();
         String host = "192.168.5.50";
         String user = webChecker.susername;
