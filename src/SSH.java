@@ -4,19 +4,19 @@ import java.util.Properties;
 import com.jcraft.jsch.*;
 
 public class SSH {
-    public void  {
-        WebChecker webChecker = new WebChecker();
+    public void ConnectandExecute(String User, char[] Pass) {
+        // WebChecker webChecker = new WebChecker();
         String host = "192.168.5.50";
-        String user = webChecker.susername;
-        String password = webChecker.spassword;
+        //String user = "msegovic";
+        //String password = "goodlife33";
         String command = "systemctl status nginx";
         try {
             Properties config = new Properties();
             config.put("StrictHostKeyChecking", "no");
             JSch jsch = new JSch();
             // Create a JSch session to connect to the server
-            Session session = jsch.getSession(user, host, 22);
-            session.setPassword(password);
+            Session session = jsch.getSession(User, host, 22);
+            //session.setPassword(Pass);
             session.setConfig(config);
             // Establish the connection
             session.connect();
