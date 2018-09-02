@@ -7,9 +7,9 @@ import java.util.List;
 public class WebChecker implements ActionListener {
 
     private JFrame frame;
-    private Label statusLabel, validLabel, userLabel, passLabel, connStatus;
-    public JTextField insertURL, username;
-    public String newURL, susername;
+    private Label statusLabel, validLabel, userLabel, passLabel, connStatus, commandLabel, exitCode;
+    public JTextField insertURL, username, servCommand;
+    public String newURL, susername, scommand;
     public JTextArea textArea;
     private JMenuBar menuBar;
     private JMenu menu;
@@ -39,7 +39,7 @@ public class WebChecker implements ActionListener {
 
         // Main frame for application
         frame = new JFrame("WebChecker");
-        frame.setBounds(50, 50, 930, 900);
+        frame.setBounds(50, 50, 930, 600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
@@ -82,7 +82,7 @@ public class WebChecker implements ActionListener {
         Color color = new Color(57, 62, 70);
         textArea.setBackground(color);
         textArea.setForeground(Color.WHITE);
-        textArea.setBounds(50, 160, 800, 500);
+        textArea.setBounds(50, 160, 800, 300);
         textArea.setEditable(false);
         textArea.setLineWrap(true);
         frame.getContentPane().add(textArea);
@@ -100,21 +100,31 @@ public class WebChecker implements ActionListener {
         userLabel.setBounds(40,40,70,30);
 
         username = new JTextField();
-        username.setBounds(110, 40, 200, 30);
+        username.setBounds(110, 40, 300, 30);
 
         passLabel = new Label();
         passLabel.setText("Password:");
         passLabel.setBounds(40,80,70,30);
 
         passwordField = new JPasswordField();
-        passwordField.setBounds(110, 80, 200, 30);
+        passwordField.setBounds(110, 80, 300, 30);
+
+        commandLabel = new Label();
+        commandLabel.setText("Command:");
+        commandLabel.setBounds(40,120,70,30);
+
+        servCommand= new JTextField();
+        servCommand.setBounds(110, 120, 300, 30);
 
         connStatus = new Label();
-        connStatus.setBounds(40,215,150,30);
+        connStatus.setBounds(40,215,150,20);
+
+        exitCode = new Label();
+        exitCode.setBounds(40,240,150,20);
 
         // Connect button
         btnConnect = new Button("Connect");
-        btnConnect.setBounds(175, 150, 115, 30);
+        btnConnect.setBounds(175, 170, 115, 30);
         btnConnect.setActionCommand("OK");
         btnConnect.addActionListener(new SSHButtonListener());
     }
@@ -135,8 +145,11 @@ public class WebChecker implements ActionListener {
             newFrame.getContentPane().add(passwordField);
             newFrame.getContentPane().add(userLabel);
             newFrame.getContentPane().add(passLabel);
-            newFrame.getContentPane().add(connStatus);
+            newFrame.getContentPane().add(commandLabel);
+            newFrame.getContentPane().add(servCommand);
             newFrame.getContentPane().add(btnConnect);
+            newFrame.getContentPane().add(connStatus);
+            newFrame.getContentPane().add(exitCode);
         }
     }
 
@@ -146,17 +159,17 @@ public class WebChecker implements ActionListener {
             String command = e.getActionCommand();
             susername = username.getText();
             spassword = passwordField.getPassword();
+            scommand = servCommand.getText();
             if (command.equals("OK")) {
                 SSH sshConn = new SSH();
-                sshConn.ConnectandExecute(susername, spassword);
+                sshConn.ConnectandExecute(susername, spassword, scommand);
                 if (sshConn.successfulConn){
                     connStatus.setText("Connected !");
+                    exitCode.setText("Exit Status: " + sshConn.channelStatus);
 
                     // Deleting old text from URL connection
                     textArea.setText(null);
-                    for (int i=0; i<sshConn.tmp.length; i++) {
-                        textArea.append(new String(sshConn.tmp));
-                    }
+                    textArea.append(new String(sshConn.tmp));
                 }else{
                     connStatus.setText("Error: " + sshConn.error);
                 }

@@ -7,12 +7,11 @@ public class SSH {
     public String host;
     public boolean successfulConn;
     public String error;
+    public int channelStatus;
     public byte[] tmp;
 
-    public void ConnectandExecute(String User, char[] Pass){
-        // WebChecker webChecker = new WebChecker();
+    public void ConnectandExecute(String User, char[] Pass, String command){
         host = "192.168.5.50";
-        String command = "systemctl status nginx";
         try {
             Properties config = new Properties();
             config.put("StrictHostKeyChecking", "no");
@@ -31,18 +30,17 @@ public class SSH {
 
             InputStream in = channel.getInputStream();
             channel.connect();
-            tmp = new byte[1024];
+            tmp = new byte[2048];
             while (true) {
                 while (in.available() > 0) {
-                    int i = in.read(tmp, 0, 1024);
+                    int i = in.read(tmp, 0, 2048);
                     if (i < 0) {
                         break;
                     }
                     //System.out.print(new String(tmp, 0, i));
                 }
                 if (channel.isClosed()) {
-                    System.out.println("Exit Status: "
-                            + channel.getExitStatus());
+                    channelStatus = channel.getExitStatus();
                     break;
                 }
                 Thread.sleep(1000);
