@@ -39,7 +39,7 @@ public class WebChecker implements ActionListener {
 
         // Main frame for application
         frame = new JFrame("WebChecker");
-        frame.setBounds(50, 50, 930, 700);
+        frame.setBounds(50, 50, 930, 900);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
@@ -82,7 +82,7 @@ public class WebChecker implements ActionListener {
         Color color = new Color(57, 62, 70);
         textArea.setBackground(color);
         textArea.setForeground(Color.WHITE);
-        textArea.setBounds(50, 160, 800, 300);
+        textArea.setBounds(50, 160, 800, 500);
         textArea.setEditable(false);
         textArea.setLineWrap(true);
         frame.getContentPane().add(textArea);
@@ -110,7 +110,7 @@ public class WebChecker implements ActionListener {
         passwordField.setBounds(110, 80, 200, 30);
 
         connStatus = new Label();
-        connStatus.setBounds(40,215,70,30);
+        connStatus.setBounds(40,215,150,30);
 
         // Connect button
         btnConnect = new Button("Connect");
@@ -151,8 +151,14 @@ public class WebChecker implements ActionListener {
                 sshConn.ConnectandExecute(susername, spassword);
                 if (sshConn.successfulConn){
                     connStatus.setText("Connected !");
+
+                    // Deleting old text from URL connection
+                    textArea.setText(null);
+                    for (int i=0; i<sshConn.tmp.length; i++) {
+                        textArea.append(new String(sshConn.tmp));
+                    }
                 }else{
-                    connStatus.setText("Unable to connect !");
+                    connStatus.setText("Error: " + sshConn.error);
                 }
             }
         }

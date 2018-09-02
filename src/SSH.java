@@ -6,7 +6,10 @@ import com.jcraft.jsch.*;
 public class SSH {
     public String host;
     public boolean successfulConn;
-    public void ConnectandExecute(String User, char[] Pass) {
+    public String error;
+    public byte[] tmp;
+
+    public void ConnectandExecute(String User, char[] Pass){
         // WebChecker webChecker = new WebChecker();
         host = "192.168.5.50";
         String command = "systemctl status nginx";
@@ -28,14 +31,14 @@ public class SSH {
 
             InputStream in = channel.getInputStream();
             channel.connect();
-            byte[] tmp = new byte[1024];
+            tmp = new byte[1024];
             while (true) {
                 while (in.available() > 0) {
                     int i = in.read(tmp, 0, 1024);
                     if (i < 0) {
                         break;
                     }
-                    System.out.print(new String(tmp, 0, i));
+                    //System.out.print(new String(tmp, 0, i));
                 }
                 if (channel.isClosed()) {
                     System.out.println("Exit Status: "
@@ -47,7 +50,7 @@ public class SSH {
             channel.disconnect();
             session.disconnect();
         } catch (Exception e) {
-            e.printStackTrace();
+            error = e.getMessage();
         }
     }
 }
