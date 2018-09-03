@@ -1,9 +1,0 @@
-https://apex.oracle.com/
-http://www.oracle.com/goto/oll
-https://www.google.co.in/index.html
-http:/testUrl.temp
-http://www.google.com/news
-http://www.google.com/newzzz
-http://oracle.com/test.html
-https://www.youtube.com/watch?v=jVHN-lvgQsY
-

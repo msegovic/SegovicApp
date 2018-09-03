@@ -64,7 +64,7 @@ public class WebChecker implements ActionListener {
         // Text field for entering URL
         insertURL = new JTextField();
         insertURL.setText("Enter URL");
-        insertURL.setBounds(50, 50, 134, 30);
+        insertURL.setBounds(50, 50, 300, 30);
         frame.getContentPane().add(insertURL);
         insertURL.setColumns(1);
 
@@ -89,7 +89,7 @@ public class WebChecker implements ActionListener {
 
         //Add new button for checking URL via HTTPClient class
         Button btnChange = new Button("Check URL");
-        btnChange.setBounds(220, 50, 117, 29);
+        btnChange.setBounds(380, 50, 117, 29);
         btnChange.setActionCommand("OK");
         btnChange.addActionListener(new ButtonClickListener());
         frame.getContentPane().add(btnChange);
@@ -117,10 +117,10 @@ public class WebChecker implements ActionListener {
         servCommand.setBounds(110, 120, 300, 30);
 
         connStatus = new Label();
-        connStatus.setBounds(40,215,150,20);
+        connStatus.setBounds(40,215,400,20);
 
         exitCode = new Label();
-        exitCode.setBounds(40,240,150,20);
+        exitCode.setBounds(40,240,400,20);
 
         // Connect button
         btnConnect = new Button("Connect");
@@ -150,6 +150,11 @@ public class WebChecker implements ActionListener {
             newFrame.getContentPane().add(btnConnect);
             newFrame.getContentPane().add(connStatus);
             newFrame.getContentPane().add(exitCode);
+
+            // Reset labels
+            insertURL.setText("Enter URL");
+            validLabel.setText(null);
+            statusLabel.setText(null);
         }
     }
 
